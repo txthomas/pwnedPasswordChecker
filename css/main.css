@@ -1,0 +1,55 @@
+
+.branding .logo {
+	margin-top: 1.5rem;
+}
+
+.info-text-small {
+	font-size: 0.75rem;
+}
+#request-area {
+	position: relative;
+}
+
+#request-spinner {
+	position: absolute;
+	top: 40%;
+	left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 341px) {
+
+	.branding .logo {
+		font-size: 1.5rem;
+		margin-top: 0.75rem;
+	}
+
+	.info-text-small {
+		font-size: 0.45rem;
+	}
+}
+
+@media screen and (min-width: 342px) and (max-width: 420px) {
+
+	.branding .logo {
+		font-size: 1.75rem;
+		margin-top: 1rem;
+	}
+
+	.info-text-small {
+		font-size: 0.55rem;
+	}
+}
+
+@media screen and (min-width: 421px) and (max-width: 520px) {
+
+	.branding .logo {
+		font-size: 2.0rem;
+		margin-top: 1.25rem;
+	}
+
+	.info-text-small {
+		font-size: 0.65rem;
+	}
+}

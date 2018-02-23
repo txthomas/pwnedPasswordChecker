@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <title>pwned Password checker</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+<!--        <link rel="shortcut icon" href="favicon.ico">	-->
+
+        <link rel="stylesheet" type="text/css"  href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css"  href="fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
+        <link rel="stylesheet" type="text/css"  href="css/main.css">
+    </head>
+
+    <body class="body-blue">
+        <div id="fb-root"></div>
+
+        <div class="page-wrapper">
+            <header class="header text-center">
+                <div class="container">
+                    <div class="branding">
+                        <h1 class="logo">
+                            <a href="index.php">
+                                #<span class="text-highlight">pwned</span><span class="text-bold">PasswordChecker</span>
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="tagline">
+                        <p>Made with <i class="fas fa-heart"></i> for everyone</p>
+                    </div>
+                </div>
+            </header>
+
+            <section class="cards-section text-center">
+                <div class="container">
+                    <div id="intro" class="cards-wrapper row">
+                        <p>#pwnedPasswordChecker generiert für das eingegebene Passwort einen SHA-1 Hash und überprüft ob der Hash in einer Passwortdatenbank vorhanden ist. Für die Datenbankanfrage werden nur die ersten fünf Digits des Hashes übertragen. Somit bleiben deine Daten lokal und sicher. Gib einfach dein Passwort in das Eingabefeld ein und betrachte das Ergebnis der Abfrage.<br>Für weitere Informationen zur Passwortdatenbank schaue bei <a href="https://haveibeenpwned.com">haveibeenpwned.com</a> vorbei.</p>
+                    </div>
+
+                    <div id="hash-generator" class="cards-wrapper row">
+                        <div class="item item-green col-md-12 col-sm-12 col-xs-12">
+                            <div class="item-inner">
+                                <p>
+                                    <input id="message" type="text" placeholder="Dein Passwort..." class="form-control bind-generatehash-keyup">
+                                </p>
+                                <p>
+                                    <textarea id="result" class="form-control" rows="3"></textarea><br/>
+                                </p>
+                                <p class="info-text-small">Bleibt die Augabe leer, so wurde dein Passwort nicht gefunden!</p>
+                                <div id="request-area">
+                                	<i id="request-spinner" class="fas fa-spinner fa-spin"></i>
+                                    <textarea id="pwnedResult" class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer" class="cards-wrapper row">
+                </div>
+            </section>
+        </div>
+
+
+        <footer class="footer text-center">
+            <div class="container">
+                <!--/* this template is released under the creative commons attribution 3.0 license. please keep the attribution link below when using for your own project. thank you for your support. :) if you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://github.com/txthomas" target="_blank">txthomas</a> for paranoid user</small>
+            </div>
+        </footer>
+    </body>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/main.js"></script>
+</html> 
+
+
